@@ -1,151 +1,121 @@
 # 💊 PharmaComply AI
 
-**AI-Powered Compliance Documentation Platform for the Pharmaceutical Industry**
-
-PharmaComply AI is an intelligent platform designed to streamline pharmaceutical documentation compliance using state-of-the-art Artificial Intelligence. It assists organizations in managing regulatory guidelines, analyzing process documents, and detecting discrepancies — all in real time.
+**AI-Powered Pharmaceutical Compliance Platform**  
+PharmaComply AI is an intelligent document analysis system for the pharmaceutical industry. Built using **Next.js (TypeScript)**, it utilizes **AI models** (via Unstructured.io + Gemini Pro) to analyze regulatory documents, detect compliance gaps, and simplify the audit process.
 
 ---
 
 ## 🚀 Project Overview
 
-- **Name**: PharmaComply AI  
-- **Purpose**: To provide an AI-driven solution for pharmaceutical companies to efficiently validate documents against regulatory frameworks and maintain compliance.
+PharmaComply AI is designed to help pharmaceutical companies manage regulatory documentation more efficiently. By using AI, it reduces manual review efforts and ensures documents align with global compliance frameworks such as:
+
+- **FDA 21 CFR**
+- **EU GMP Guidelines**
+- **ICH Guidelines**
 
 ---
 
 ## ✨ Key Features
 
 ### 1. AI-Powered Document Analysis
-- NLP for document understanding
-- Machine Learning for compliance verification
-- Deep Learning for contextual insights
-- Automated discrepancy detection
+- Natural Language Processing for document structure understanding
+- ML & Deep Learning for discrepancy and compliance detection
+- Contextual severity assessment
 
 ### 2. Regulatory Framework Support
-- FDA 21 CFR
-- EU GMP
-- ICH Guidelines
+- FDA, EU GMP, ICH, and other global compliance standards
 - Multi-framework extensibility
 
 ### 3. Advanced Analytics
-- Risk Assessment Scoring
-- Compliance Metrics
-- Trend Analysis
-- Performance Tracking
+- Risk scoring & trend detection
+- Document status metrics
+- Performance tracking over time
 
-### 4. Collaboration Tools
-- Team Workspaces
-- Review & Commenting System
-- Version Control
-- Audit Trails
-
----
-
-## 🧱 Technical Stack
-
-- **Frontend**: Next.js (with TypeScript)
-- **UI Framework**: Tailwind CSS
-- **Icons**: React Icons (Font Awesome)
-- **Routing**: Next.js App Router
-- **State Management**: React Hooks
-- **AI Backend**: Unstructured.io + Gemini Pro (for document parsing and comparison)
-
----
-
-## ⚠️ Problem Statement
-
-Pharmaceutical companies face:
-- **Regulatory Complexity**: Multiple overlapping global standards
-- **Massive Documentation**: Time-consuming manual review
-- **Compliance Risks**: High penalties and product rejections
-
----
-
-## ✅ Solution Components
-
-- Intelligent Document Analysis  
-- Regulatory Comparison Engine  
-- Real-time Compliance Alerts  
-- Discrepancy Severity Evaluation  
-- Automated Reporting  
-- Enterprise-Ready Infrastructure  
-
----
-
-## 🧪 Use Cases
-
-### 🔍 Regulatory Submissions
-- Clinical Trial Documentation  
-- Manufacturing Process Descriptions  
-- Safety and Efficacy Data  
-
-### 🧾 Quality Management
-- SOP Review & Updates  
-- CAPA Management  
-- Change Control  
-- Training Compliance Docs  
+### 4. Team Collaboration
+- Workspaces with user roles
+- Comments, reviews, and approvals
+- Full audit trails and versioning
 
 ---
 
 ## 🎯 Target Users
 
-- Pharmaceutical & Biotech Companies  
-- Regulatory Affairs Professionals  
-- Quality Assurance Teams  
-- Compliance Officers  
-- Document Management Departments  
+- Pharmaceutical companies
+- Regulatory affairs professionals
+- Quality assurance teams
+- Compliance officers
+- Document managers
 
 ---
 
-## 🌟 Business Value
+## 🧱 Tech Stack
 
-### ⏱ Efficiency
-- Reduce manual review time by **up to 80%**
-
-### ✅ Accuracy
-- AI-powered comparison minimizes errors
-
-### 📘 Compliance
-- Keeps documents aligned with latest standards
-
-### 🤝 Collaboration
-- Built-in tools for review, audits, and versioning
+| Category       | Technology              |
+|----------------|--------------------------|
+| Frontend       | Next.js (TypeScript)     |
+| Styling        | Tailwind CSS             |
+| Icons          | React Icons              |
+| AI Integration | Unstructured.io + Gemini Pro |
+| State Mgmt     | React Hooks              |
+| Routing        | App Router (Next.js 13+) |
 
 ---
 
-## 💼 Security & Compliance
+## 📁 Folder Structure
 
-- Enterprise-grade security  
-- Audit trail for every action  
-- Document version control  
-- Secure user roles and access  
-
----
-
-## 🔮 Future Potential
-
-- DMS Integration (e.g., SharePoint, DocuWare)  
-- Expansion to other regulated sectors (Food, Cosmetics)  
-- Mobile App support  
-- More AI capabilities (GPT-style summarization, red flag alerts)  
-- Custom compliance rule authoring  
-
----
-
-## 📷 User Interface Preview
-
-- Clean, responsive UI  
-- Pharma-tech inspired color palette  
-- Intuitive document viewer with side-by-side comparison  
-- Seamless navigation & modern UX  
+```
+pharma-comply-ai/
+├── app/                      # App router pages (login, dashboard)
+├── components/              # Reusable UI components
+├── lib/                     # Helper functions and configs
+├── public/                  # Static assets
+├── styles/                  # Tailwind and custom styles
+├── types/                   # Global TS types and interfaces
+├── .env.local               # Local environment variables
+├── tailwind.config.ts       # Tailwind configuration
+├── tsconfig.json            # TypeScript config
+└── README.md
+```
 
 ---
 
-## 📬 Contact & Contributions
+## 🛠️ Getting Started
 
-Feel free to contribute or raise issues!  
-Reach out at [nithins7676@gmail.com] or open a pull request!
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/nithins7676/AI-RENA-SOP .
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+# or
+yarn
+```
+
+### 3. Setup Environment Variables
+
+Create a `.env.local` file in the root and add:
+
+```env
+NEXT_PUBLIC_API_BASE_URL=http://localhost:3000/api
+UNSTRUCTURED_API_KEY=your_unstructured_key
+GEMINI_API_KEY=your_gemini_key
+```
+
+> ⚠️ Replace with your actual keys and API endpoints
+
+### 4. Run Development Server
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Visit [http://localhost:3000](http://localhost:3000) to view the app.
 
 ---
 
-> 🧠 *PharmaComply AI helps you stay audit-ready, always.*  
