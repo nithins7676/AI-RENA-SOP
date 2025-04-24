@@ -1,64 +1,151 @@
-prompt="""You are a pharmaceutical compliance expert tasked with comparing two documents:
+# 💊 PharmaComply AI
 
-A PROCESS DOCUMENT: Describing how pharmaceutical processes are actually being implemented
+**AI-Powered Compliance Documentation Platform for the Pharmaceutical Industry**
 
-A GUIDELINE DOCUMENT: The official regulatory requirements that must be followed
+PharmaComply AI is an intelligent platform designed to streamline pharmaceutical documentation compliance using state-of-the-art Artificial Intelligence. It assists organizations in managing regulatory guidelines, analyzing process documents, and detecting discrepancies — all in real time.
 
-Your task is to identify ANY and ALL discrepancies where the process document doesn't align with the guideline document. The guideline document should always be considered the correct standard.
+---
 
-CRITICAL REQUIREMENT: You must analyze EVERY SINGLE SECTION AND PARAGRAPH of the process document and compare it against the corresponding guidelines. Do not skip any content, no matter how minor it may seem.
+## 🚀 Project Overview
 
-Analyze both documents exhaustively and output a structured JSON array containing objects for each discrepancy or compliance issue found. Each object must include:
+- **Name**: PharmaComply AI  
+- **Purpose**: To provide an AI-driven solution for pharmaceutical companies to efficiently validate documents against regulatory frameworks and maintain compliance.
 
-{
-"id": [sequential number],
-"section": [specific section reference from the documents],
-"status": ["discrepancy" or "compliant"],
-"Guidelines": [exact text from guideline document],
-"Guidelines_pageNumber": [page number in guideline document],
-"User_pdf": [corresponding text from process document],
-"User_pdf_pageNumber": [page number in process document],
-"severity": ["high", "medium", or "low" based on potential impact]
-}
+---
 
-Important instructions:
+## ✨ Key Features
 
-You MUST review the ENTIRE process document without exception - every paragraph, bullet point, and requirement
+### 1. AI-Powered Document Analysis
+- NLP for document understanding
+- Machine Learning for compliance verification
+- Deep Learning for contextual insights
+- Automated discrepancy detection
 
-Record all discrepancies, even seemingly minor ones
+### 2. Regulatory Framework Support
+- FDA 21 CFR
+- EU GMP
+- ICH Guidelines
+- Multi-framework extensibility
 
-Pay special attention to differences in procedures, requirements, measurements, testing methods, storage conditions, and documentation practices
+### 3. Advanced Analytics
+- Risk Assessment Scoring
+- Compliance Metrics
+- Trend Analysis
+- Performance Tracking
 
-Provide precise page number references
+### 4. Collaboration Tools
+- Team Workspaces
+- Review & Commenting System
+- Version Control
+- Audit Trails
 
-Assess severity based on potential impact to product quality, patient safety, and regulatory compliance
+---
 
-Format your entire response as a single valid JSON array
+## 🧱 Technical Stack
 
-If a section in the process document has no corresponding guideline, note this as a potential issue
+- **Frontend**: Next.js (with TypeScript)
+- **UI Framework**: Tailwind CSS
+- **Icons**: React Icons (Font Awesome)
+- **Routing**: Next.js App Router
+- **State Management**: React Hooks
+- **AI Backend**: Unstructured.io + Gemini Pro (for document parsing and comparison)
 
-Example format for your response:
-[
-{
-"id": 1,
-"section": "Section 4.2 - Temperature Controls",
-"status": "discrepancy",
-"Guidelines": "Products must be stored at 2-8°C with hourly temperature monitoring.",
-"Guidelines_pageNumber": 12,
-"User_pdf": "Products stored at 2-10°C with daily temperature checks.",
-"User_pdf_pageNumber": 15,
-"severity": "high"
-},
-{
-"id": 2,
-"section": "Section 5.1 - Documentation",
-"status": "discrepancy",
-"Guidelines": "All batch records must be retained for minimum 7 years.",
-"Guidelines_pageNumber": 18,
-"User_pdf": "Batch records are kept for 5 years minimum.",
-"User_pdf_pageNumber": 23,
-"severity": "medium"
-}
-]
+---
 
-Remember: Every single piece of text in the process document must be evaluated against the guidelines. Do not miss anything."""
+## ⚠️ Problem Statement
+
+Pharmaceutical companies face:
+- **Regulatory Complexity**: Multiple overlapping global standards
+- **Massive Documentation**: Time-consuming manual review
+- **Compliance Risks**: High penalties and product rejections
+
+---
+
+## ✅ Solution Components
+
+- Intelligent Document Analysis  
+- Regulatory Comparison Engine  
+- Real-time Compliance Alerts  
+- Discrepancy Severity Evaluation  
+- Automated Reporting  
+- Enterprise-Ready Infrastructure  
+
+---
+
+## 🧪 Use Cases
+
+### 🔍 Regulatory Submissions
+- Clinical Trial Documentation  
+- Manufacturing Process Descriptions  
+- Safety and Efficacy Data  
+
+### 🧾 Quality Management
+- SOP Review & Updates  
+- CAPA Management  
+- Change Control  
+- Training Compliance Docs  
+
+---
+
+## 🎯 Target Users
+
+- Pharmaceutical & Biotech Companies  
+- Regulatory Affairs Professionals  
+- Quality Assurance Teams  
+- Compliance Officers  
+- Document Management Departments  
+
+---
+
+## 🌟 Business Value
+
+### ⏱ Efficiency
+- Reduce manual review time by **up to 80%**
+
+### ✅ Accuracy
+- AI-powered comparison minimizes errors
+
+### 📘 Compliance
+- Keeps documents aligned with latest standards
+
+### 🤝 Collaboration
+- Built-in tools for review, audits, and versioning
+
+---
+
+## 💼 Security & Compliance
+
+- Enterprise-grade security  
+- Audit trail for every action  
+- Document version control  
+- Secure user roles and access  
+
+---
+
+## 🔮 Future Potential
+
+- DMS Integration (e.g., SharePoint, DocuWare)  
+- Expansion to other regulated sectors (Food, Cosmetics)  
+- Mobile App support  
+- More AI capabilities (GPT-style summarization, red flag alerts)  
+- Custom compliance rule authoring  
+
+---
+
+## 📷 User Interface Preview
+
+- Clean, responsive UI  
+- Pharma-tech inspired color palette  
+- Intuitive document viewer with side-by-side comparison  
+- Seamless navigation & modern UX  
+
+---
+
+## 📬 Contact & Contributions
+
+Feel free to contribute or raise issues!  
+Reach out at [nithins7676@gmail.com] or open a pull request!
+
+---
+
+> 🧠 *PharmaComply AI helps you stay audit-ready, always.*  
